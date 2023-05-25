@@ -1,5 +1,9 @@
 # CS494 - Lab01: SOCKET PROGRAMMING
 
+# I. Demo
+<img src="https://github.com/DuongHoangHuy/CS494_Lab01_Socket_Programming/blob/main/CS494%20-%20Lab01%20SOCKET%20PROGRAMMING%20ab20a969bc78425084face53778e096c/gif-2.gif" >
+
+- Link youtube demo: https://www.youtube.com/watch?v=JEtrX2Wu-mY&t=156s&ab_channel=E.Galois
 # II.	Game story & Packet transfer flow
 
 - In our game system, client and server let the other know what to do totally based on the event messages. Our **event handler** is just a function that gets the **“event”** in the Json string and the **if/else** system to classify what is the next instruction.
@@ -9,7 +13,9 @@
 
 - The number of players (MAX_PLAYER) and the length of the race (MAX_POINT) are predefined in the GameManager.
 
-![Untitled](CS494%20-%20Lab01%20SOCKET%20PROGRAMMING%20ab20a969bc78425084face53778e096c/Untitled.png)
+<p align="center">
+  <img src="https://github.com/DuongHoangHuy/CS494_Lab01_Socket_Programming/raw/main/CS494%20-%20Lab01%20SOCKET%20PROGRAMMING%20ab20a969bc78425084face53778e096c/Untitled.png" alt="Image" width="500">
+</p>
 
 *Register*
 
@@ -28,7 +34,9 @@
 
 - An automatic mechanism is established for the game system in this phase, which contains 3 sub-phases:.
 
-![Untitled](CS494%20-%20Lab01%20SOCKET%20PROGRAMMING%20ab20a969bc78425084face53778e096c/Untitled%201.png)
+<p align="center">
+  <img src="https://github.com/DuongHoangHuy/CS494_Lab01_Socket_Programming/raw/main/CS494%20-%20Lab01%20SOCKET%20PROGRAMMING%20ab20a969bc78425084face53778e096c/Untitled%201.png" alt="Image" width="500">
+</p>
 
 - tcpClient will send answer data for tcpServer to import into the game system.
 - gameManager will process those data and send the request to the tcpClient and view in the UI screen.
@@ -40,7 +48,9 @@
 
 ## 3. Game ended phases
 
-![Untitled](CS494%20-%20Lab01%20SOCKET%20PROGRAMMING%20ab20a969bc78425084face53778e096c/Untitled%202.png)
+<p align="center">
+  <img src="https://github.com/DuongHoangHuy/CS494_Lab01_Socket_Programming/raw/main/CS494%20-%20Lab01%20SOCKET%20PROGRAMMING%20ab20a969bc78425084face53778e096c/Untitled%202.png" alt="Image" width="500">
+</p>
 - The game will end only when there is a player who wins the game (greater or equal the length of the race) or all the players are eliminated.
 - Right after the ending round, gameManager will send the signal (packet) to the tcpClient to stop the game and show the end game UI screen. Player can replay the game by clicking on the replay button, then the player will go back to the start game phase.
 
