@@ -56,7 +56,7 @@
 
 # III.	Implementation
 
-## 1. Main components
+<!-- ## 1. Main components
 
 - At the server side, we decided to design two main components. Each of them will run separately in different threads to handle separate tasks:
     - **TCPServer**: Control the socket connection and handle all types of requests between server and client.
@@ -131,7 +131,7 @@ if (key.isReadable()) { // Handle all request
    	this.gameRoom.hashmapPlayers.get(key).write(resObj.toString());
    }
 }
-```
+``` -->
 
 # IV.	References
 
